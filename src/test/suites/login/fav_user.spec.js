@@ -8,7 +8,7 @@ describe('StackDemo login', () => {
       browser.execute(() => sessionStorage.clear())
     })
 
-    it(`Login sholud be successful for account with username 'fav_user'`, function() {
+    it(`Login should be successful for account with username 'fav_user'`, function() {
         $('#signin').click();
         $('#username input').setValue(browser.config.accounts[0].username + '\n');
         $('#password input').setValue(browser.config.accounts[0].password + '\n');
